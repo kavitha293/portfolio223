@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavitha Banda | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f9fafc;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    nav {
+      background: #007bff;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #dce8ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: white;
+    }
+
+    .hero img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 80px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+    }
+
+    .about p {
+      text-align: center;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* Skills */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .skill {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    /* Projects */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* Contact */
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-info a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      section {
+        padding: 40px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Kavitha Banda</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="photo.jpg" alt="Kavitha Banda">
+    <h2>Hello, I'm Kavitha 👋</h2>
+    <p>Front-End Developer | Innovator | Hackathon Enthusiast from Nellore</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I’m Kavitha Banda, a passionate B.Tech student and front-end developer from Nellore, Andhra Pradesh. I have a strong interest in web development, UI/UX design, and problem-solving. I enjoy creating interactive, user-friendly web applications that combine creativity with functionality.
+
+Over the past few years, I’ve built projects like Foodie’s Delight, a responsive food ordering web application, and Student Stress Level Detection, a Python-based project that analyzes student data to predict stress levels. These experiences have sharpened my coding, analytical, and project management skills, and taught me how to deliver solutions that have real-world impact.
+
+I thrive in hackathons and collaborative coding challenges, as they push me to learn faster, think innovatively, and apply my skills under pressure. Participating in Hackathon 2025 by Terralogic is an exciting opportunity to collaborate with like-minded innovators, tackle real-world problems, and showcase my abilities.
+
+My goal is to grow as a full-stack developer, contribute to impactful projects, and continuously learn emerging technologies like AI, ML, and modern web frameworks. I am driven by curiosity, creativity, and the desire to make a meaningful difference through technology.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">My Tech Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><h3>HTML5</h3><p>Semantic and accessible web design</p></div>
+      <div class="skill"><h3>CSS3</h3><p>Flexbox, Grid, and animations</p></div>
+      <div class="skill"><h3>JavaScript</h3><p>Interactive UI and logic building</p></div>
+      <div class="skill"><h3>React</h3><p>Modern component-based UI</p></div>
+      <div class="skill"><h3>Python</h3><p>Logic, automation, and ML basics</p></div>
+       </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3 >🍴 Foodie’s Delight</h3>
+        <a href="https://kavitha293.github.io/foodies_delight/" target="_blank">Live Demo</a>
+        <p>
+          A responsive food ordering website allowing users to explore menus, view dishes, and place orders.
+          Built using HTML, CSS, and JavaScript with a focus on design and usability.
+        </p>
+      </div>
+      <div class="project">
+         <h3>🧠 Student Stress Level Detection</h3>
+         <a href="https://migym2dmkhsp7pjtuvsdd6.streamlit.app/" target="_blank">Live Demo</a>
+       
+        <p>
+          A machine learning project that predicts student stress levels using survey data.
+          Built using Python, Pandas, and visualization libraries to support mental health insights.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:bandakavitha40@gmail.com">bandakavitha40@gmail.com</a></p>
+      <p><strong>Location:</strong> Nellore, Andhra Pradesh</p>
+      <p>Let’s collaborate and innovate together 🚀</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Kavitha Banda | Designed for Hackathon 2025
+  </footer>
+
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll("nav a").forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
